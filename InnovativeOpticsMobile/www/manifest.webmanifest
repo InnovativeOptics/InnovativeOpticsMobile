@@ -1,0 +1,30 @@
+{
+  "name": "Innovative Optics Mobile",
+  "short_name": "INVOMobile",
+  "description": "The fastest way to interact with Innovative Optics without customer service.",
+  "lang": "en-US",
+  "start_url": "https://invo.shinyapps.io/InnovativeOpticsMobile/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/icon-144.png",
+      "sizes": "144x144"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Shortcut",
+      "short_name": "Shortcut",
+      "description": "Do something",
+      "url": "/?foo=1",
+      "icons": [
+        {
+          "src": "icons/shortcut.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

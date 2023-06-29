@@ -1,0 +1,23 @@
+Package: InnovativeOpticsMobile
+Title: MIO
+Version: 0.0.0.9000
+Authors@R: person('John', 'Lecocq', email = 'john@innovativeoptics.com', role = c('cre', 'aut'))
+Description: A mobile app built for Innovative Optics colleagues.
+License: MIT + file LICENSE
+Imports:
+    config (>= 0.3.1),
+    dplyr,
+    glue,
+    golem (>= 0.4.0),
+    pkgload,
+    purrr,
+    readxl,
+    scales,
+    shiny (>= 1.7.4),
+    shinyMobile
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
