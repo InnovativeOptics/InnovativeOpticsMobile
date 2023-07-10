@@ -20,7 +20,7 @@ app_ui <- function(request) {
       options = list(
         dark = F,
         color = "#00a033",
-        filled = F
+        filled = T
       ),
       title = "Innovative Optics Mobile",
       allowPWA = TRUE,
@@ -28,7 +28,7 @@ app_ui <- function(request) {
         navbar = f7Navbar(
           title = h1(style =
                        {
-                         "color: darkblue;
+                         "color: #ec323b;
                          text-shadow: 3px 3px 3px #ababab;"
                        },
                      "Innovative Optics"),
@@ -161,15 +161,16 @@ app_ui <- function(request) {
           f7Tab(
             tabName = "Search",
             icon = f7Icon("search"),
-            img(src = "flair/cool_guy.jpg",
-                width = "100%"),
             f7Block(
               h1("Use this tab to search for compatible lenses"),
-              h1(
-                "Have an LSO confirm the specifications of our lenses
-                   are sufficient for your application"
-              ),
-              h1("Contact us if you have any questions/comments")
+              a(href = "https://innovativeoptics.com/product/pi19-laser-glasses-701-gunmetal-frame/",
+                img(src = "flair/cropped_701.png",
+                  width = "100%")),
+              h3(em("Shown above - The 701 frame with Pi19 lenses. Fit-over style glasses for dentists that use the Solea laser.
+                    The 701 frame may be fitted with any of our lighweight, polycarbonate lenses."
+              )),
+              h1("You decide how to search: (1) based on your device's name,
+                 (2) based on the wavelength of your device")
             ),
             f7Accordion(
               f7AccordionItem(
@@ -223,6 +224,7 @@ app_ui <- function(request) {
                                label = h2(strong("Optical Density")),
                                min = 0,
                                max = 10,
+                               step = 0.5,
                                value = 6,
                                manual = T,
                                autorepeat = T,
@@ -235,6 +237,11 @@ app_ui <- function(request) {
               )
             ),
             f7Block(f7Row(
+              h1(
+                "Always have an LSO confirm the specifications of our lenses
+                   are sufficient for your application"
+              ),
+              h1("Contact us if you have any questions/comments"),
               img(src = "icons/INVO_978.png",
                   width = "72px")
             ))
@@ -242,6 +249,11 @@ app_ui <- function(request) {
           f7Tab(
             tabName = "Catalog",
             icon = f7Icon("book"),
+            f7Block(
+              h1("This tab is a searchable catalog"),
+              h1("It is intended for the user that is familiar with our products"),
+              h1("For example, one looking for currently available 701.Gi1 color ways can type \"701 gi1\"")
+            ),
             f7Searchbar(id = "prod-search",
                         placeholder = "Search"),
             f7List(map(
@@ -258,6 +270,10 @@ app_ui <- function(request) {
           f7Tab(
             tabName = "Share",
             icon = f7Icon("hare"),
+            a(href = "https://innovativeoptics.com/product/pi4-laser-safety-glasses-757-gunmetal-frame/",
+              img(src = "flair/757_sample.png",
+                  width = "100%")
+            ),
             f7Block(f7Row(
               img(src = "icons/INVO_978.png",
                   width = "72px")
