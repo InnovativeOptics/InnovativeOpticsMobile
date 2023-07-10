@@ -55,7 +55,7 @@ golem::use_recommended_tests()
 
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
-golem::use_favicon("www/icons/INVO_978.png") # path = "path/to/ico". Can be an online file.
+golem::use_favicon("www/icons/icon-144.png") # path = "path/to/ico". Can be an online file.
 # golem::remove_favicon() # Uncomment to remove the default favicon
 
 ## Add helper functions ----
